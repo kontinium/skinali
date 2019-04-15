@@ -127,6 +127,13 @@ body {
   transition: .2s;
   -webkit-transform: translateY(-200%);
           transform: translateY(-200%);
+  opacity: 0;
+}
+
+.menu_active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 .menu__nav {
@@ -222,7 +229,7 @@ body {
 .hero {
   background: #f1f1f1 url(../img/hero/hero-bg.jpg) no-repeat center;
   background-size: cover;
-  padding-top: 180px;
+  padding-top: 120px;
   padding-bottom: 270px;
 }
 
