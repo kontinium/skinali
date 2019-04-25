@@ -349,13 +349,18 @@ img {
 .offer-block {
   background: #fff url(../img/offer/form-bg.png) no-repeat center right;
   background-size: contain;
-  padding: 80px;
-}
-
-.offer__block {
-  margin-top: -200px;
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  padding: 80px;
+  margin-top: -200px;
+}
+
+.offer-block_calc-bg {
+  background: #fff url(../img/offer/form-bg-calc.png) no-repeat center right 50%;
+}
+
+.offer-block_price-bg {
+  background: #fff url(../img/offer/form-bg-price.png) no-repeat center right -70%;
 }
 
 .offer__title {
@@ -369,6 +374,7 @@ img {
   display: block;
   font-size: 21px;
   margin-bottom: 48px;
+  max-width: 700px;
 }
 
 .form__row {
@@ -379,7 +385,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   max-width: 900px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .form__row:last-child {
@@ -404,11 +410,18 @@ img {
 
 .form__input:last-child {
   border-right-width: 1px;
+  padding-left: 20px;
 }
 
 .form__button {
   height: 80px;
   width: 100%;
+}
+
+.form__policy {
+  display: inline-block;
+  margin-left: 45px;
+  font-size: 17px;
 }
 
 @media (max-width: 1199px) {
@@ -417,12 +430,15 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .offer__block {
-    background: none;
+    background-image: none;
     background-color: #fff;
     padding: 40px;
   }
+}
+
+@media (max-width: 768px) {
   .offer__title {
     font-size: 18px;
   }
@@ -448,6 +464,10 @@ img {
   }
   .form__input {
     margin-bottom: 20px;
+  }
+  .form__policy {
+    margin-left: 0;
+    margin-top: 30px;
   }
 }
 
@@ -787,5 +807,49 @@ img {
   .step {
     width: 100%;
   }
+}
+
+.factory-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.factory-block__text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-left: 73px;
+  font-size: 20px;
+}
+
+.factory-block__image {
+  margin: 20px 0;
+}
+
+.factory-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.factory-block__text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-left: 73px;
+  font-size: 20px;
+}
+
+.factory-block__image {
+  margin: 20px 0;
 }
 /*# sourceMappingURL=style.css.map */
